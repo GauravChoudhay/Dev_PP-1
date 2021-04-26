@@ -167,7 +167,7 @@ function addTicket(e) {
       </div>
     <div class="ticket-content">${modalText}</div>`;
     ticketDiv.querySelector(".ticket-filter").addEventListener("click" , toggleTicketFilter);
-    ticketDiv.querySelector(".ticket-delete").addEventListener("click" , handleTicketDelete);
+    ticketDiv.querySelector(".ticket-delete i").addEventListener("click" , handleTicketDelete);
 
     // append the ticket on the UI !!!!
     ticketContainer.append(ticketDiv);
@@ -265,7 +265,7 @@ function loadSelectedTickets(ticketFilter){
       <div class="ticket-content">${ticketContent}</div>`;
 
       ticketDiv.querySelector(".ticket-filter").addEventListener("click" , toggleTicketFilter);
-      ticketDiv.querySelector(".ticket-delete").addEventListener("click" , handleTicketDelete);
+      ticketDiv.querySelector(".ticket-delete i").addEventListener("click" , handleTicketDelete);
       
       // append the ticket on the UI !!!!
       ticketContainer.append(ticketDiv);
